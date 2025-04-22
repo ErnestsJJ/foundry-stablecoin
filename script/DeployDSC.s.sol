@@ -31,4 +31,8 @@ contract DeployDSC is Script {
     function getEthPriceFeedAndWeth() public view returns (address, address) {
         return (priceFeedAddresses[0], tokenAddresses[0]);
     }
+
+    function getBtcPriceFeedAndWbtc() public view returns (address, address) {
+        return (priceFeedAddresses[1], tokenAddresses[1]);
+    }
 }
